@@ -6,7 +6,7 @@
   left: 0;
   height: 100px;
   z-index: 100;
-  box-shadow: 0 5px 10px 1px #222;
+
 }
 
 h1 {
@@ -39,8 +39,8 @@ h1 {
 .customizeBox {
   border: 1px solid skyblue;
   border-radius: 5px;
-  box-shadow: 3px 3px 10px 3px skyblue;
-  background-color: white;
+  background-image: url(pizza5.png);
+background-color: white;
 }
 
 #receipt {
@@ -51,7 +51,7 @@ h1 {
   padding: 20px 10px;
   margin: 0 auto 50px auto;
   background-color: #ddd;
-  box-shadow: 5px 5px 15px #333;
+
 }
 
 .container {
@@ -69,6 +69,7 @@ h1 {
 .receiptRow {
   margin: 10px 0px;
   border-bottom: 1px dashed skyblue;
+  background-image:url(pizza4.png);
 }
 
 .costs {
