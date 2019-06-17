@@ -6,7 +6,7 @@
   left: 0;
   height: 100px;
   z-index: 100;
-
+background-image: url(pizza4.png);
 }
 
 h1 {
@@ -36,12 +36,7 @@ h1 {
   width: 13vw;
 }
 
-.customizeBox {
-  border: 1px solid skyblue;
-  border-radius: 5px;
-  background-image: url(pizza5.png);
-background-color: white;
-}
+
 
 #receipt {
   width: 400px;
@@ -51,13 +46,14 @@ background-color: white;
   padding: 20px 10px;
   margin: 0 auto 50px auto;
   background-color: #ddd;
-
+background-image: url(pizza4.png);
 }
 
 .container {
   padding: 30px;
   position: relative;
   top: 100px;
+
 }
 
 .ingredients {
