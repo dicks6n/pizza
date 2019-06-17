@@ -13,7 +13,7 @@ function getValues() {
   var cheese = $('input[name=cheeseRadio]:checked').val();
   var crust = $('input[name=crustRadio]:checked').val();
   var sauce = $('input[name=sauceRadio]:checked').val();
-  
+
   var values = [size, meats, veggies, cheese, crust, sauce];
   return values;
 };
@@ -43,13 +43,13 @@ function calculateCrust() {
 
 function calculateSize(size) {
   if (size === "Personal") {
-    return 6;
+    return 600;
   } else if (size === "Medium") {
-    return 10;
+    return 1000;
   } else if (size === "Large") {
-    return 14;
+    return 1400;
   } else if (size === "X-Large") {
-    return 16;
+    return 1600;
   }
 };
 
@@ -114,5 +114,5 @@ $(function() {
     $('#receipt').slideToggle(800);
     $('#orderAgain').hide();
   });
-  
+
 });
