@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Pizza!</title>
-    <link rel='icon' href='./images/pizza-icon.png'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,21 +12,13 @@
   </head>
 
   <body>
-    <!--ENTIRE CONTAINER-->
     <div class="container bg-light">
       <div class='title'>
         <h1>Pizza Order Form</h1>
       </div>
-
-
       <form class='my-5'>
-        <!--------PIZZA SIZE------------
-        Radio buttons for a size selection:
-        Personal, Medium, Large, and Extra Large
-        --------------------------------------->
         <div class='row'>
-
-          <!--PERSONAL-->
+            <div class="bg-danger">
           <div class="col-3 text-center">
             <div class="custom-control custom-radio">
               <input class="custom-control-input" type="radio" name="selectSize" id="personal" value="Personal" required>
@@ -37,9 +28,6 @@
               </label>
             </div>
           </div>
-          <!--/PERSONAL-->
-
-          <!--MEDIUM-->
           <div class="col-3 text-center">
             <div class="custom-control custom-radio">
               <input class="custom-control-input" type="radio" name="selectSize" id="medium" value="Medium">
@@ -49,9 +37,7 @@
               </label>
             </div>
           </div>
-          <!--/MEDIUM-->
 
-          <!--LARGE-->
           <div class="col-3 text-center">
             <div class="custom-control custom-radio">
               <input class="custom-control-input" type="radio" name="selectSize" id="large" value="Large">
@@ -61,9 +47,7 @@
               </label>
             </div>
           </div>
-          <!--/LARGE-->
 
-          <!--X LARGE-->
           <div class="col-3 text-center">
             <div class="custom-control custom-radio">
               <input class="custom-control-input" type="radio" name="selectSize" id="xlarge" value="X-Large">
@@ -73,11 +57,9 @@
               </label>
             </div>
           </div>
-          <!--/X LARGE-->
-        </div>
-        <!---------/PIZZA SIZE---------->
 
-        <!--CUSTOMIZE-->
+        </div>
+</div>
         <div class='row justify-content-center my-5'>
 
           <!-----------------MEATS-------------------
@@ -87,7 +69,7 @@
           -------------------------------------------->
           <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
             <h5>MEAT(s)</h5>
-            <p>1 topping included, ksh100.00 for each additional meat.</p>
+            <p>1 topping included, $1.00 for each additional meat.</p>
             <hr>
             <div class="form-check">
               <input class="form-check-input meat" type="checkbox" value="Pepperoni" id="pepperoni">
@@ -135,7 +117,7 @@
           --------------------------------------------->
           <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
             <h5>VEGGIE(s)</h5>
-            <p>1 topping included, ksh100.00 for each additional veggie.</p>
+            <p>1 topping included, $1.00 for each additional veggie.</p>
             <hr>
             <div class="form-check">
               <input class="form-check-input veggie" type="checkbox" value="Tomatoes" id="tomatoes">
@@ -186,12 +168,7 @@
               </label>
             </div>
           </div>
-          <!------------------/VEGGIES-------------->
 
-          <!-----------------CHEESE------------------
-          Radio buttons for a cheese selection:
-          Regular, No cheese, Extra Cheese
-          ------------------------------------------>
           <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
             <h5>CHEESE</h5>
             <p>Select from choices below.</p>
@@ -211,17 +188,11 @@
             <div class="form-check">
               <input class="form-check-input" name='cheeseRadio' type="radio" value="Extra Cheese" id="extraCheese">
               <label class="form-check-label" for="extraCheese">
-                Extra Cheese
+                Extra Cheese (ksh300)
               </label>
             </div>
           </div>
-          <!------------------/CHEESE--------------->
 
-          <!------------------CRUST------------------
-          Radio buttons for a crust selection:
-          Plain Crust, Garlic Butter Crust, Cheese Stuffed Crust,
-          Spicy Crust, and House Special Crust
-          ------------------------------------------->
           <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
             <h5>CRUST</h5>
             <p>Select from choices below.</p>
@@ -241,7 +212,7 @@
             <div class="form-check">
               <input class="form-check-input" name='crustRadio' type="radio" value="Cheese Stuffed Crust" id="cheeseCrust">
               <label class="form-check-label" for="cheeseCrust">
-                Cheese Stuffed Crust (ksh300.00)
+                Cheese Stuffed Crust ($3)
               </label>
             </div>
             <div class="form-check">
@@ -257,17 +228,17 @@
               </label>
             </div>
           </div>
-          <!----------------/CRUST------------>
 
-          <!---------------SAUCE----------------
-          Radio buttons for a sauce selection:
-          Marinara sauce, White sauce, Barbeque sauce, and No Sauce
-          ------------------------------------->
           <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
             <h5>SAUCE</h5>
             <p>Select from choices below.</p>
             <hr>
-
+            <div class="form-check">
+              <input class="form-check-input" name='sauceRadio' type="radio" value="Marinara" id="marinara" checked>
+              <label class="form-check-label" for="marinara">
+                Marinara
+              </label>
+            </div>
             <div class="form-check">
               <input class="form-check-input" name='sauceRadio' type="radio" value="White Sauce" id="whiteSauce">
               <label class="form-check-label" for="whiteSauce">
@@ -287,23 +258,18 @@
               </label>
             </div>
           </div>
-          <!------------------/SAUCE-------------->
 
         </div>
-        <!--/CUSTOMIZE-->
 
-        <!--BUTTONS-->
         <div class='row'>
           <div class='col text-center mb-5'>
             <button class='btn btn-primary' type=submit>Submit Order</button>
             <button class='btn btn-danger' type="reset">Reset</button>
           </div>
         </div>
-        <!--/BUTTONS-->
-      </form>
-      <!--/FORM-->
 
-      <!------------RECEIPT--------->
+      </form>
+
       <div id='receipt' class='row'>
         <div class='col'>
           <h3>Order Received!</h3>
@@ -313,7 +279,7 @@
             <div class='col p-3'>
               <div class='row receiptRow'>
                 <div class='col-3'>
-                  Size:<img id='personalPic' class='img-fluid' src='pizza4.png' alt='personal size pizza, ksh600.00'>
+                  Size:
                 </div>
                 <div class='col-7'>
                   <span class='ingredients' id='sizeSelection'></span>
@@ -324,7 +290,7 @@
               </div>
               <div class='row receiptRow'>
                 <div class='col-3'>
-                  Crust:<img id='personalPic' class='img-fluid' src='pizza4.png' alt='personal size pizza, ksh600.00'>
+                  Crust:
                 </div>
                 <div class='col-7'>
                   <span class='ingredients' id='crustSelection'></span>
@@ -335,7 +301,7 @@
               </div>
               <div class='row receiptRow'>
                 <div class='col-3'>
-                  Cheese:<img id='personalPic' class='img-fluid' src='pizza4.png' alt='personal size pizza, ksh600.00'>
+                  Cheese:
                 </div>
                 <div class='col-7'>
                   <span class='ingredients' id='cheeseSelection'></span>
@@ -346,7 +312,7 @@
               </div>
               <div class='row receiptRow'>
                 <div class='col-3'>
-                  Sauce:<img id='personalPic' class='img-fluid' src='pizza4.png' alt='personal size pizza, ksh600.00'>
+                  Sauce:
                 </div>
                 <div class='col-7'>
                   <span class='ingredients' id='sauceSelection'></span>
@@ -357,7 +323,7 @@
               </div>
               <div class='row receiptRow'>
                 <div class='col-3'>
-                  Meat:<img id='personalPic' class='img-fluid' src='pizza4.png' alt='personal size pizza, ksh600.00'>
+                  Meat:
                 </div>
                 <div class='col-7'>
                   <span class='ingredients' id='meatSelection'></span>
@@ -368,7 +334,7 @@
               </div>
               <div class='row receiptRow'>
                 <div class='col-3'>
-                  Veggie:<img id='personalPic' class='img-fluid' src='pizza4.png' alt='personal size pizza, ksh600.00'>
+                  Veggie:
                 </div>
                 <div class='col-7'>
                   <span class='ingredients' id='veggieSelection'></span>
@@ -386,9 +352,9 @@
           </div>
         </div>
       </div>
-      <!----------/RECEIPT------->
+
       <button id='orderAgain' class='btn btn-primary'>Order Again!</button>
-    </div>
-    <!--/ENTIRE CONTAINER-->
-  </body>
-</html>
+      </div>
+
+      </body>
+      </html>
