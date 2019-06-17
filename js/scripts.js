@@ -29,14 +29,14 @@ function calculateMeatVeggie(array) {
 
 function calculateCheese() {
   if ($('input[name=cheeseRadio]:checked').val() === 'Extra Cheese') {
-    var cost = 3;
+    var cost = 100;
     return cost;
   } else return 0;
 };
 
 function calculateCrust() {
   if ($('input[name=crustRadio]:checked').val() === 'Cheese Stuffed Crust') {
-    var cost = 300;
+    var cost = 100;
     return cost;
   } else return 0;
 };
