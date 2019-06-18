@@ -1,3 +1,8 @@
+$("#orderAgain").click(function(event) {
+  var name = $("#orderAgain").val();
+  alert(name + " YOUR ORDER WILL BE DELIVERED AS SOON AS POSIBBLE");
+  event.preventDefault();
+});
 // back-end logic
 
 function getValues() {
